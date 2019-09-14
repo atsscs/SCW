@@ -1,0 +1,44 @@
+---
+title: "Lesson 6"
+author: "Sara Stearns"
+date: "9/14/2019"
+output: html_document
+---
+Bold - **bold**  
+Italics - _Italics_  
+Italics the other way - *Italics*    
+
+
+# Title  
+
+## Subtitle  
+
+### Section Title  
+
+#### Subsection Title  
+
+- Bullet list 1  
+- Bullet list 2  
+- Bullet list 3    
+
+1. Ordered list 1  
+1. Ordered list 2  
+1. Ordered list 3  
+
+## untitled  
+
+1. list 2  
+1. list 2  
+1. list 2  
+
+_* Bullet list 1  
+* Bullet list 2  
+* Bullet list 3_  
+
+
+```{r first_chunk}  
+```
+```{r load_plot, echo=FALSE}  
+library(ggplot2) 
+gapminder <- read.table("gapminder.txt", header = TRUE)  
+ggplot(data = gapminder, aes(x=gdpPercap, y=lifeExp, color = continent))+geom_point()```  
